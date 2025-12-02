@@ -1,0 +1,24 @@
+Logging started at 2025-12-02 12:01:37.503249
+[2025-12-02 12:01:37] Loading trained model
+[2025-12-02 12:01:37] Model loaded successfully
+[2025-12-02 12:01:37] Loading dataset
+[2025-12-02 12:01:37] Starting Fourier analysis
+[2025-12-02 12:01:37] DFT computed: shape torch.Size([114, 128])
+[2025-12-02 12:01:37] Key frequencies: [ 26  88  10 104  60  54  59  55  20  94]
+[2025-12-02 12:01:38] Fourier spectrum plot saved
+[2025-12-02 12:01:38] Sparsity analysis: {
+  "gini_coefficient": 0.4613113292655808,
+  "total_energy": 819.6004638671875,
+  "energy_concentration": {
+    "top_1": 0.060805752873420715,
+    "top_5": 0.2704598605632782,
+    "top_10": 0.41832035779953003,
+    "top_20": 0.5512827634811401
+  },
+  "num_frequencies": 114
+}
+[2025-12-02 12:01:38] Verifying cos(ω(a+b)) = cos(ωa)cos(ωb) - sin(ωa)sin(ωb)
+[2025-12-02 12:01:38] Identity verification complete: mean error 0.000000
+[2025-12-02 12:01:38] Analyzing constructive/destructive interference
+[2025-12-02 12:01:38] Interference analysis: mean correct rank 0.00
+[2025-12-02 12:01:38] Analysis results saved

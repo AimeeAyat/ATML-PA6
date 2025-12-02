@@ -1,0 +1,65 @@
+TASK 2: REVERSE ENGINEERING THE FOURIER CIRCUIT
+================================================================================
+
+1. Loading trained model from Task 1...
+[2025-12-02 12:01:37] Loading trained model
+Moving model to device:  cuda
+Model loaded from ..\Task1\checkpoints\final_model.pt
+[2025-12-02 12:01:37] Model loaded successfully
+
+2. Loading dataset...
+[2025-12-02 12:01:37] Loading dataset
+Dataset created: P=113, Train=3830, Test=8939
+
+3. Analyzing Fourier spectrum...
+[2025-12-02 12:01:37] Starting Fourier analysis
+[2025-12-02 12:01:37] DFT computed: shape torch.Size([114, 128])
+
+Key frequencies identified: [ 26  88  10 104  60  54  59  55  20  94]
+[2025-12-02 12:01:37] Key frequencies: [ 26  88  10 104  60  54  59  55  20  94]
+
+4. Plotting Fourier spectrum...
+Plot saved to plots\fourier_spectrum.png
+[2025-12-02 12:01:38] Fourier spectrum plot saved
+
+5. Analyzing sparsity...
+Gini coefficient: 0.4613
+Energy concentration (top-10): 0.4183
+[2025-12-02 12:01:38] Sparsity analysis: {
+  "gini_coefficient": 0.4613113292655808,
+  "total_energy": 819.6004638671875,
+  "energy_concentration": {
+    "top_1": 0.060805752873420715,
+    "top_5": 0.2704598605632782,
+    "top_10": 0.41832035779953003,
+    "top_20": 0.5512827634811401
+  },
+  "num_frequencies": 114
+}
+
+6. Verifying trigonometric identity...
+[2025-12-02 12:01:38] Verifying cos(ω(a+b)) = cos(ωa)cos(ωb) - sin(ωa)sin(ωb)
+Mean identity error: 0.000000
+Std identity error: 0.000000
+[2025-12-02 12:01:38] Identity verification complete: mean error 0.000000
+
+7. Analyzing logit interference patterns...
+[2025-12-02 12:01:38] Analyzing constructive/destructive interference
+
+Correct answer rank (mean): 0.00
+Logit difference (mean): 76.66
+[2025-12-02 12:01:38] Interference analysis: mean correct rank 0.00
+
+8. Saving analysis results...
+Analysis saved to logs\task2_analysis.json
+[2025-12-02 12:01:38] Analysis results saved
+
+================================================================================
+TASK 2 COMPLETE
+================================================================================
+Key findings:
+  - Gini coefficient (sparsity): 0.4613
+  - Top-10 energy concentration: 0.4183
+  - Identity verification error: 0.000000
+  - Mean correct answer rank: 0.00 (lower is better)
+  - Mean logit difference: 76.66 (higher is better)
