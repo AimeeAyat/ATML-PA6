@@ -1,0 +1,20 @@
+Logging started at 2025-12-02 10:23:28.081157
+[2025-12-02 10:23:28] Modulus P: 113
+[2025-12-02 10:23:28] Training fraction: 0.3
+[2025-12-02 10:23:28] Additional epochs: 50000
+[2025-12-02 10:23:28] Learning rate: 0.0002
+[2025-12-02 10:23:28] Weight decay: 2.0
+[2025-12-02 10:23:28] WARNING: No checkpoint found, starting from scratch
+[2025-12-02 10:23:28] Creating dataset
+[2025-12-02 10:23:28] Dataset created: 3830 train, 8939 test
+[2025-12-02 10:23:28] Creating HookedTransformer
+[2025-12-02 10:23:28] Initializing trainer
+[2025-12-02 10:23:28] Freezing biases
+[2025-12-02 10:23:28] Starting training for 50000 epochs
+[2025-12-02 11:42:56] Saving model and metrics
+[2025-12-02 11:42:56] Model saved to checkpoints\final_model.pt
+[2025-12-02 11:42:56] Metrics saved to logs\metrics.json
+[2025-12-02 11:42:56] Generating training curves plot
+[2025-12-02 11:42:57] Plot saved to plots\figure2_training_curves.png
+[2025-12-02 11:42:57] Training completed successfully!
+[2025-12-02 11:42:57] Final test accuracy: 1.0000
