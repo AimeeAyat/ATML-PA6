@@ -1,0 +1,40 @@
+{
+  "ablation_experiments": {
+    "individual_frequency_ablation": {
+      "baseline_accuracy": 1.0,
+      "num_frequencies_tested": 10,
+      "mean_accuracy_drop": 0.10871460437774658,
+      "max_accuracy_drop": 0.511914074420929
+    },
+    "inverse_ablation": {
+      "baseline_accuracy": 1.0,
+      "accuracy_with_only_key_frequencies": 0.4991610050201416,
+      "sparsity_ratio": 0.08849557522123894,
+      "accuracy_preserved_percent": 49.91610050201416
+    }
+  },
+  "pca_analysis": {
+    "explained_variance": {
+      "PC1": 0.18866343796253204,
+      "PC2": 0.18390561640262604
+    },
+    "circularity_metrics": {
+      "mean_distance_from_center": 0.6741120219230652,
+      "std_distance_from_center": 0.05467104911804199,
+      "cv_distance": 0.08110083639621735,
+      "mean_angle_spacing": 0.05511565878987312,
+      "std_angle_spacing": 0.02224464900791645,
+      "cv_angle": 0.40359944105148315,
+      "is_circular": false
+    },
+    "phase_structure": {
+      "phase_token_correlation": -0.08621777119188255,
+      "mean_phase_increment_rad": -0.8163247108459473,
+      "expected_phase_increment_rad": 0.05560340979804944
+    },
+    "addition_geometry": {
+      "mean_angle_error_rad": 1.82389497756958,
+      "std_angle_error_rad": 0.0
+    }
+  }
+}

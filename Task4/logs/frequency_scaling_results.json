@@ -1,0 +1,58 @@
+{
+  "test_configurations": [
+    2,
+    10,
+    20,
+    30
+  ],
+  "ablation_impact": {
+    "2": {
+      "baseline": 1.0,
+      "mean_drop": 0.511914074420929,
+      "max_drop": 0.511914074420929
+    },
+    "10": {
+      "baseline": 1.0,
+      "mean_drop": 0.10871460437774658,
+      "max_drop": 0.511914074420929
+    },
+    "20": {
+      "baseline": 1.0,
+      "mean_drop": 0.10871460437774658,
+      "max_drop": 0.511914074420929
+    },
+    "30": {
+      "baseline": 1.0,
+      "mean_drop": 0.10871460437774658,
+      "max_drop": 0.511914074420929
+    }
+  },
+  "inverse_ablation_accuracy": {
+    "2": {
+      "baseline": 1.0,
+      "accuracy_with_key_freqs": 0.03344893082976341,
+      "accuracy_preserved_percent": 3.3448930829763412
+    },
+    "10": {
+      "baseline": 1.0,
+      "accuracy_with_key_freqs": 0.4991610050201416,
+      "accuracy_preserved_percent": 49.91610050201416
+    },
+    "20": {
+      "baseline": 1.0,
+      "accuracy_with_key_freqs": 0.4991610050201416,
+      "accuracy_preserved_percent": 49.91610050201416
+    },
+    "30": {
+      "baseline": 1.0,
+      "accuracy_with_key_freqs": 0.4991610050201416,
+      "accuracy_preserved_percent": 49.91610050201416
+    }
+  },
+  "key_observations": {
+    "2_frequencies": "With 2 most important frequencies: 3.3% accuracy preserved",
+    "10_frequencies": "With 10 key frequencies: 49.9% accuracy preserved",
+    "20_frequencies": "With 20 frequencies: 49.9% accuracy preserved",
+    "30_frequencies": "With 30 frequencies: 49.9% accuracy preserved"
+  }
+}

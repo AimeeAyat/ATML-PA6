@@ -1,0 +1,7 @@
+Logging started at 2025-12-02 15:31:24.665325
+[2025-12-02 15:31:24] Loading trained model for frequency scaling analysis
+[2025-12-02 15:31:24] Key frequencies: [26, 88, 10, 104, 60, 54, 59, 55, 20, 94]
+[2025-12-02 15:31:25] Config 2: baseline=1.0000, inverse_acc=0.0334, preserved=3.3%
+[2025-12-02 15:31:25] Config 10: baseline=1.0000, inverse_acc=0.4992, preserved=49.9%
+[2025-12-02 15:31:26] Config 20: baseline=1.0000, inverse_acc=0.4992, preserved=49.9%
+[2025-12-02 15:31:26] Config 30: baseline=1.0000, inverse_acc=0.4992, preserved=49.9%
