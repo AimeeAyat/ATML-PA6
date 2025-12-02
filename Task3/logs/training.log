@@ -1,0 +1,48 @@
+Logging started at 2025-12-02 12:07:26.529572
+[2025-12-02 12:07:26] Loading trained model from Task 1
+[2025-12-02 12:07:26] Model loaded
+[2025-12-02 12:07:26] Training metrics loaded
+[2025-12-02 12:07:26] Loaded key frequencies: 10
+[2025-12-02 12:07:26] Dataset loaded
+[2025-12-02 12:07:26] Computing hidden progress metrics
+[2025-12-02 12:07:28] Computed hidden progress for 4 checkpoints
+[2025-12-02 12:07:28] Identifying Memorization/Circuit Formation/Cleanup phases
+[2025-12-02 12:07:28] Phase boundaries: {
+  "memorization": [
+    0,
+    12500
+  ],
+  "circuit_formation": [
+    12500,
+    30000
+  ],
+  "cleanup": [
+    30000,
+    50000
+  ]
+}
+[2025-12-02 12:07:28] Phase statistics: {
+  "memorization": {
+    "avg_test_loss": 23.6769753211085,
+    "avg_test_acc": 0.028845206745897106,
+    "avg_train_loss": 0.18215404764725532,
+    "final_test_acc": 0.04044234628478686,
+    "num_epochs": 12500
+  },
+  "circuit_formation": {
+    "avg_test_loss": 16.79630286352975,
+    "avg_test_acc": 0.11423502368487064,
+    "avg_train_loss": 6.708397363906572e-07,
+    "final_test_acc": 0.4729049503803253,
+    "num_epochs": 17500
+  },
+  "cleanup": {
+    "avg_test_loss": 0.23824657550963962,
+    "avg_test_acc": 0.9627238699446121,
+    "avg_train_loss": 2.6072071424536603e-07,
+    "final_test_acc": 1.0,
+    "num_epochs": 20000
+  }
+}
+[2025-12-02 12:07:28] Phase diagram plot saved
+[2025-12-02 12:07:28] Analysis results saved

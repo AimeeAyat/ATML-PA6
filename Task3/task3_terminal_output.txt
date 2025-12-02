@@ -1,0 +1,126 @@
+TASK 3: HIDDEN PROGRESS MEASURES
+================================================================================
+
+1. Loading trained model...
+[2025-12-02 12:07:26] Loading trained model from Task 1
+Moving model to device:  cuda
+Model loaded successfully
+[2025-12-02 12:07:26] Model loaded
+
+2. Loading training metrics from Task 1...
+[2025-12-02 12:07:26] Training metrics loaded
+
+3. Loading key frequencies from Task 2...
+Loaded 10 key frequencies
+[2025-12-02 12:07:26] Loaded key frequencies: 10
+
+4. Loading dataset...
+Dataset created: P=113, Train=3830, Test=8939
+[2025-12-02 12:07:26] Dataset loaded
+
+5. Computing restricted and excluded loss over training...
+[2025-12-02 12:07:26] Computing hidden progress metrics
+Found 4 checkpoints
+Moving model to device:  cuda
+Epoch 12500: Restricted Loss=22.4145, Excluded Loss=22.4145
+Moving model to device:  cuda
+Epoch 25000: Restricted Loss=14.4817, Excluded Loss=14.4817
+Moving model to device:  cuda
+Epoch 37500: Restricted Loss=0.0000, Excluded Loss=0.0000
+Moving model to device:  cuda
+Epoch 50000: Restricted Loss=0.0000, Excluded Loss=0.0000
+Computed metrics for 4 checkpoints
+[2025-12-02 12:07:28] Computed hidden progress for 4 checkpoints
+Progress data saved to logs\hidden_progress.json
+
+6. Identifying training phases...
+[2025-12-02 12:07:28] Identifying Memorization/Circuit Formation/Cleanup phases
+
+Phase boundaries identified:
+  Memorization: epochs 0-12500
+  Circuit Formation: epochs 12500-30000
+  Cleanup: epochs 30000-50000
+  Grok point: epoch 25000
+[2025-12-02 12:07:28] Phase boundaries: {
+  "memorization": [
+    0,
+    12500
+  ],
+  "circuit_formation": [
+    12500,
+    30000
+  ],
+  "cleanup": [
+    30000,
+    50000
+  ]
+}
+
+7. Extracting metrics by phase...
+
+Phase Statistics:
+  memorization:
+    Avg test acc: 0.0288
+    Avg test loss: 23.6770
+    Epochs: 12500
+  circuit_formation:
+    Avg test acc: 0.1142
+    Avg test loss: 16.7963
+    Epochs: 17500
+  cleanup:
+    Avg test acc: 0.9627
+    Avg test loss: 0.2382
+    Epochs: 20000
+[2025-12-02 12:07:28] Phase statistics: {
+  "memorization": {
+    "avg_test_loss": 23.6769753211085,
+    "avg_test_acc": 0.028845206745897106,
+    "avg_train_loss": 0.18215404764725532,
+    "final_test_acc": 0.04044234628478686,
+    "num_epochs": 12500
+  },
+  "circuit_formation": {
+    "avg_test_loss": 16.79630286352975,
+    "avg_test_acc": 0.11423502368487064,
+    "avg_train_loss": 6.708397363906572e-07,
+    "final_test_acc": 0.4729049503803253,
+    "num_epochs": 17500
+  },
+  "cleanup": {
+    "avg_test_loss": 0.23824657550963962,
+    "avg_test_acc": 0.9627238699446121,
+    "avg_train_loss": 2.6072071424536603e-07,
+    "final_test_acc": 1.0,
+    "num_epochs": 20000
+  }
+}
+
+8. Generating phase diagram...
+Plot saved to plots\phase_diagram.png
+[2025-12-02 12:07:28] Phase diagram plot saved
+
+9. Saving analysis results...
+Analysis saved to logs\task3_analysis.json
+[2025-12-02 12:07:28] Analysis results saved
+
+================================================================================
+KEY FINDINGS
+================================================================================
+
+1. GROKKING TRANSITION:
+   - Occurs at epoch 25000
+   - Test accuracy jump from 0.1226 to 0.1246
+
+2. MEMORIZATION PHASE:
+   - Duration: 12500 epochs
+   - Avg test accuracy: 0.0288
+   - Avg test loss: 23.6770
+
+3. CIRCUIT FORMATION:
+   - Duration: 17500 epochs
+   - Where the Fourier circuit is learned silently
+   - Average test acc: 0.1142
+
+4. CLEANUP PHASE:
+   - Test accuracy reaches near-perfect: 1.0000
+   - Model sheds memorization, retains only the circuit
