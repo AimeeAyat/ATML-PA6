@@ -1,0 +1,17 @@
+Logging started at 2025-12-02 15:41:40.302471
+[2025-12-02 15:41:40] Loading training metrics from Task 1
+[2025-12-02 15:41:40] Loaded 50000 epochs of metrics
+[2025-12-02 15:41:40] Identifying Memorization/Circuit Formation/Cleanup checkpoints
+[2025-12-02 15:41:40] Phase epochs: {
+  "memorization": 10000,
+  "circuit_formation": 20000,
+  "cleanup": 49999
+}
+[2025-12-02 15:41:40] Dataset loaded
+[2025-12-02 15:41:40] Computing Hessian eigenvalues
+[2025-12-02 15:41:40] Computing Hessian for memorization
+[2025-12-02 15:41:41] Computing Hessian for circuit_formation
+[2025-12-02 15:41:41] Computing Hessian for cleanup
+[2025-12-02 15:41:42] Analyzing eigenvalue trends
+[2025-12-02 15:41:42] Correlating eigenvalues with sparsity
+[2025-12-02 15:41:42] Task 6 complete

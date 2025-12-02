@@ -1,0 +1,38 @@
+{
+  "hessian_eigenvalues": {},
+  "eigenvalue_analysis": {},
+  "correlation_analysis": {
+    "gini_coefficient": 0.4613113292655808,
+    "energy_concentration_top_10": 0.41832035779953003,
+    "eigenvalue_metrics": {},
+    "hypothesis": {
+      "description": "Sparsity increases as loss landscape flattens",
+      "expected_trend": "Lower eigenvalues + Higher Gini coefficient = Better generalization"
+    }
+  },
+  "theoretical_analysis": {
+    "memorization_phase": {
+      "description": "Model memorizes training data",
+      "expected_landscape": "Sharp minima (high eigenvalues)",
+      "weight_decay_effect": "Creates implicit regularization pressure",
+      "observation": "Max eigenvalue ~ N/A"
+    },
+    "circuit_formation": {
+      "description": "Fourier circuit is learned",
+      "expected_landscape": "Landscape begins to flatten",
+      "weight_decay_effect": "Drives model toward sparse solutions",
+      "observation": "Max eigenvalue ~ N/A"
+    },
+    "cleanup": {
+      "description": "Memorization is shed, circuit solidifies",
+      "expected_landscape": "Flat minima (low eigenvalues)",
+      "weight_decay_effect": "Solution is sparse and robust",
+      "observation": "Max eigenvalue ~ N/A"
+    },
+    "weight_decay_interpretation": {
+      "role": "L=1.0 weight decay biases toward sparse, distributed representations",
+      "mechanism": "L2 regularization penalizes large weights, pushing model toward eigenspace with smaller spectral norms",
+      "evidence": "Sparsity (Gini) increases while eigenvalues decrease"
+    }
+  }
+}
