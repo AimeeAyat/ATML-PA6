@@ -1,0 +1,35 @@
+{
+  "training_metrics": {
+    "final_train_loss": 2.2329791704578383e-07,
+    "final_train_acc": 1.0,
+    "final_test_loss": 3.1649217172950256e-07,
+    "final_test_acc": 1.0
+  },
+  "fourier_analysis": {
+    "key_frequencies": [
+      96,
+      18,
+      45,
+      69,
+      103,
+      11,
+      46,
+      68,
+      44,
+      70
+    ],
+    "sparsity": {
+      "gini": 1.5169973373413086,
+      "top_10_energy_ratio": 0.4733787178993225
+    }
+  },
+  "trigonometric_identity": {
+    "mean_error": 1.659129778008861e-14,
+    "sine_sign_flip_detected": true
+  },
+  "comparison_with_addition": {
+    "addition_gini": 0.45609325453360294,
+    "subtraction_gini": 1.5169973373413086,
+    "gini_difference": 1.0609040828077057
+  }
+}

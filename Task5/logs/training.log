@@ -1,0 +1,5 @@
+Logging started at 2025-12-02 15:47:17.074237
+[2025-12-02 15:47:17] Loading subtraction model
+[2025-12-02 15:47:17] Starting ablation on subtraction model
+[2025-12-02 15:47:17] Running ablation sweep on subtraction model
+[2025-12-02 15:47:19] Task 5 ablation analysis complete
